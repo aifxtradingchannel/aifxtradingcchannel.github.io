@@ -15,7 +15,7 @@
     .container {
       max-width: 800px;
       margin: 50px auto;
-      background: rgba(0, 0, 0, 0.6);
+      background: rgba(0, 0, 0, 0.7);
       padding: 30px;
       border-radius: 10px;
       box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
@@ -25,7 +25,7 @@
       margin-bottom: 20px;
     }
     h1 {
-      font-size: 2.5em;
+      font-size: 2.8em;
       margin-bottom: 10px;
     }
     h2 {
@@ -37,18 +37,11 @@
       line-height: 1.6;
       margin-bottom: 20px;
     }
-    .button {
-      background: #ff9900;
-      color: #000;
-      padding: 15px 25px;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 5px;
-      display: inline-block;
-      transition: background 0.3s;
+    .button-container {
+      margin: 20px 0;
     }
-    .button:hover {
-      background: #e68a00;
+    .payment-button img {
+      max-width: 300px;
     }
     .footer {
       margin-top: 30px;
@@ -59,30 +52,35 @@
 </head>
 <body>
   <div class="container">
-    <!-- Replace "logo.png" with your channel logo -->
+    <!-- Update logo source to a JPEG file -->
     <img src="logo.jpeg" alt="AIFX Logo" class="logo">
     <h1>Welcome to AIFX Premium Trading Signals</h1>
     <p>
-      AIFX is your gateway to real-time gold trading signals and comprehensive market analysis. Receive immediate updates directly from a professional gold day trader's account.
+      AIFX is your gateway to real-time gold trading signals and comprehensive market analysis.
+      Receive immediate updates directly from a professional gold day trader's account.
     </p>
     <h2>Subscription Details</h2>
     <p>
-      <strong>Free Trial:</strong> Enjoy a 2-week free trial with full access to automated signals and market analysis.<br>
+      <strong>Free Trial:</strong> Enjoy a 2-week free trial with full access to our automated signals and market analysis.<br>
       <strong>Premium Access:</strong> Only $100/month for ongoing access.
     </p>
     <h2>Payment Instructions</h2>
     <p>
-      Subscribe by paying with USDT (TRC20) via NowPayments. Click the button below to proceed with your payment.
+      Subscribe by paying with USDT (TRC20) via NowPayments. Click the button below to complete your payment.
     </p>
-    <!-- Replace the href with your actual NowPayments payment URL -->
-    <a class="button" href="https://d12a-185-175-142-144.ngrok-free.app/pay" target="_blank">Pay with USDT (TRC20)</a>
+    <div class="button-container">
+      <!-- NowPayments Payment Button -->
+      <a class="payment-button" href="https://nowpayments.io/payment/?iid=4412563478" target="_blank" rel="noreferrer noopener">
+        <img src="https://nowpayments.io/images/embeds/payment-button-black.svg" alt="Crypto payment button by NOWPayments">
+      </a>
+    </div>
     <h2>Onboarding Steps</h2>
     <p>
       After completing your payment, please send the <strong>/start</strong> command to our Telegram bot <a href="https://t.me/AIFXPaymentsbot" style="color:#ff9900;">@AIFXPaymentsbot</a> to gain access to our premium channel.
     </p>
     <div class="footer">
-      <p>For more details, contact our admin: <strong>@AIFX_admin1</strong></p>
-      <p><strong>Risk Disclaimer:</strong> Trading involves risk. Please use proper risk management and consider testing strategies on a demo account before trading live.</p>
+      <p>For more details or subscription inquiries, please contact our admin: <strong>@AIFX_admin1</strong></p>
+      <p><strong>Risk Disclaimer:</strong> Trading involves risk. The signals, updates, and analysis provided here are based on personal experience and are not guaranteed. Always use proper risk management and consider testing strategies on a demo account before trading live.</p>
     </div>
   </div>
 </body>
