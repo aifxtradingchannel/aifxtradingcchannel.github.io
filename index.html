@@ -8,7 +8,6 @@
       margin: 0;
       padding: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      /* Dark background with a subtle gradient */
       background: linear-gradient(135deg, #000000, #1a1a1a);
       color: #e0e0e0;
       text-align: center;
@@ -16,7 +15,6 @@
     .container {
       max-width: 800px;
       margin: 50px auto;
-      /* Slightly transparent dark background for the content */
       background: rgba(0, 0, 0, 0.8);
       padding: 30px;
       border-radius: 10px;
@@ -29,7 +27,6 @@
     h1 {
       font-size: 2.8em;
       margin-bottom: 10px;
-      /* Gold color for headings */
       color: #d4af37;
     }
     h2 {
@@ -45,17 +42,23 @@
     .button-container {
       margin: 20px 0;
     }
-    .payment-button img {
-      max-width: 300px;
-    }
-    /* Style for the payment button container link */
     .payment-button {
       text-decoration: none;
       display: inline-block;
+      margin: 10px;
       transition: transform 0.2s;
     }
     .payment-button:hover {
       transform: scale(1.05);
+    }
+    .payment-option {
+      background: #ff9900;
+      padding: 10px 15px;
+      border-radius: 5px;
+      margin-top: 5px;
+      color: #000;
+      font-weight: bold;
+      display: inline-block;
     }
     .footer {
       margin-top: 30px;
@@ -69,7 +72,7 @@
 </head>
 <body>
   <div class="container">
-    <!-- Update logo source to a JPEG file -->
+    <!-- Channel Logo -->
     <img src="logo.jpg" alt="AIFX Logo" class="logo">
     <h1>Welcome to AIFX Premium Trading Signals</h1>
     <p>
@@ -86,10 +89,11 @@
       Subscribe by paying with USDT (TRC20) via NowPayments. Click the button below to complete your payment.
     </p>
     <div class="button-container">
-      <!-- NowPayments Payment Button -->
-      <a class="payment-button" href="https://nowpayments.io/payment/?iid=4412563478" target="_blank" rel="noreferrer noopener">
+      <!-- Payment Button directs to your /create-payment endpoint for the monthly plan -->
+      <a class="payment-button" href="https://aifxtradingchannel.github.io/aifxtradingcchannel.github.io/create-payment?plan=monthly" target="_blank" rel="noreferrer noopener">
         <img src="https://nowpayments.io/images/embeds/payment-button-black.svg" alt="Crypto payment button by NOWPayments">
       </a>
+      <div class="payment-option">Monthly Subscription - $100/month</div>
     </div>
     <h2>Onboarding Steps</h2>
     <p>
